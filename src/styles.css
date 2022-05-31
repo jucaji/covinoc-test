@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 #container {
     /* Layout Properties */
     top: 0px;
@@ -52,15 +62,16 @@
     opacity: 1;
 }
 
-#new_task {
-    /* Layout Properties */
+.new i {
     top: 140px;
     left: 334px;
     width: 41px;
     height: 18px;
+    color: white;
     /* UI Properties */
     text-align: left;
     font: normal normal bold 20px/24px Roboto;
+    font-size: xx-large;
     letter-spacing: 0.62px;
     color: #FFFFFFDE;
     opacity: 1;
@@ -76,6 +87,7 @@
     /* UI Properties */
     text-align: left;
     font: normal normal bold 20px/24px Roboto;
+    font-size: large;
     letter-spacing: 0.62px;
     color: #FFFFFFDE;
     opacity: 1;
@@ -101,11 +113,12 @@
     /* Layout Properties */
     top: 216px;
     left: 350px;
-    width: 125px;
+    width: 325px;
     height: 24px;
     /* UI Properties */
     text-align: left;
     font: normal normal normal 18px/16px Roboto;
+    font-size: small;
     letter-spacing: 0.6px;
     color: #FFFFFFDE;
     opacity: 1;
@@ -121,17 +134,19 @@
     height: 90px;
 }
 
-.tasks-list {
+#t {
     /* Layout Properties */
-    top: 335px;
+    top: 330px;
     left: 345px;
     width: 20px;
     height: 17px;
     object-fit: contain;
     /* UI Properties */
-    /* background: transparent url('./assets/images/tasks.png') 0% 0% no-repeat padding-box;
     opacity: 1;
-    position: absolute; */
+    position: absolute;
+    color: #13806A;
+    font-size: large;
+    position: absolute;
 }
 
 .tarea {
@@ -143,6 +158,7 @@
     /* UI Properties */
     text-align: left;
     font: normal normal bold 25px/24px Roboto;
+    font-size: 24px;
     letter-spacing: 0.78px;
     color: #4B9F8E;
     opacity: 1;
@@ -158,6 +174,7 @@
     /* UI Properties */
     text-align: left;
     font: normal normal normal 16px/24px Roboto;
+    font-size: 14px;
     letter-spacing: 0.5px;
     color: #FFFFFFDE;
     opacity: 1;
@@ -202,18 +219,24 @@
     opacity: 1;
 }
 
-.search {
-    /* Layout Properties */
+#input {
     top: 320px;
     left: 1056px;
     width: 479px;
     height: 46px;
-    /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #0EC4C4;
     border-radius: 23px;
     opacity: 1;
+    position: absolute;
+}
+
+#but {
+    top: 332px;
+    left: 1495px;
+    width: 24px;
+    height: 24px;
     position: absolute;
 }
 
@@ -228,11 +251,12 @@
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 7px;
     opacity: 1;
+    position: absolute;
 }
 
 #pagination {
-    top: 0px;
-    left: 27%;
+    top: 546px;
+    left: 35%;
     width: 1050px;
     height: 90px;
     position: relative;

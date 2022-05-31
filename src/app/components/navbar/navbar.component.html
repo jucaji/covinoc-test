@@ -1,0 +1,27 @@
+<!-- Navbar -->
+<div id="nav">
+    <div>
+        <div id="new_task" class="new">
+            <a href="#"><i class="fa-thin fa-plus"></i></a>
+        </div>
+        <label class="label0">Nueva tarea</label>
+    </div>
+
+    <div id="tittle">
+        <label>Titulo</label>
+    </div>
+    <form [formGroup]="tareaForm" (ngSubmit)="guardarTarea()">
+        <div id="titulo">
+            <div>
+                <input class="form-control" formControlName="tarea" id="insert" placeholder="Ingrese titulo...">
+            </div>
+        </div>
+        <div id="select-box">
+            <label class="label1">Tarea Completada</label><input type="checkbox" id="check">
+        </div>
+        <div id="save">
+            <button type="submit" class="btn btn-secondary btn-lg" id="button"><i class="fa-thin fa-plus"></i>  Guardar Tarea</button>
+        </div>
+    </form>
+</div>
+<!-- End Navbar -->

@@ -1,9 +1,9 @@
 export class Tarea {
-    id?: number;
-    titulo: string;
+    _id?: number; 
+    tarea: string;
 
-    constructor(titulo:string){
-        this.titulo = titulo;
+    constructor(tarea:string){
+        this.tarea = tarea;
     }
 }
 

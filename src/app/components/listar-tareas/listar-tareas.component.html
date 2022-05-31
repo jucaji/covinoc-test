@@ -14,11 +14,11 @@
                         </tr>
                     </thead>
                     <tbody class="info">
-                        <tr>
+                        <tr *ngFor="let tarea of listTareas">
                             <td class="text-center">1</td>
-                            <td class="text-center">Tarea completa</td>
+                            <td class="text-center">{{tarea.tarea}}</td>
                             <td class="text-center"><input type="checkbox" value=""></td>
-                            <td class="text-center"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td class="text-center"><button type="button" class="btn btn-danger"><i class="fa-solid fa-trash-can" (click)="eliminarTarea(tarea._id)"></i></button></td>
                         </tr>
                     </tbody>
                 </table>
