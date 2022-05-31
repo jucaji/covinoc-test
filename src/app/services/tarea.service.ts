@@ -14,7 +14,6 @@ export class TareaService {
 
   getTareas():Observable<any>{
     return this.http.get(this.url)
-
   }
 
   eliminarTarea(id: string): Observable<any>{
@@ -23,6 +22,6 @@ export class TareaService {
 
   guardarTarea(tarea:Tarea): Observable<any>{
     return this.http.post(this.url, tarea);
-
   }
+  
 }
