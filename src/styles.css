@@ -245,7 +245,6 @@ body {
     top: 381px;
     left: 342px;
     width: 1193px;
-    height: 546px;
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -255,8 +254,8 @@ body {
 }
 
 #pagination {
-    top: 546px;
-    left: 35%;
+    top: 446px;
+    left: 50%;
     width: 1050px;
     height: 90px;
     position: relative;

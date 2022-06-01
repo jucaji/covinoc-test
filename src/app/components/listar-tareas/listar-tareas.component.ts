@@ -31,6 +31,8 @@ export class ListarTareasComponent implements OnInit {
     this._tareaService.eliminarTarea(id).subscribe(data =>{
       this.toastr.error('La tarea fue eliminada con exito','Tarea Eliminada');
       this.obtenerTareas();
+    }, error =>{
+      console.log(error);
     })
   }
 
